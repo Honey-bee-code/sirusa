@@ -2,7 +2,7 @@
 require_once "../_config/config.php";
 if(isset($_SESSION['user'])) {
     echo "<script>window.location='".base_url()."';</script>";
-} else {
+}
 ?> 
 
 <!DOCTYPE html>
@@ -29,7 +29,10 @@ if(isset($_SESSION['user'])) {
                 // tambahkan or die sebagai trancking error
                 $sql_login = mysqli_query($koneksi, "SELECT * FROM user WHERE username = '$user' AND password = '$password'") or die (mysqli_error($koneksi));
                 if(mysqli_num_rows($sql_login) > 0) {
-                    $_SESSION['user'] = $user;
+                    // $_SESSION['user'] = $user; 
+                    $qry = mysqli_fetch_array($sql_login);
+                    $_SESSION['user'] = $qry['username'];
+                    $_SESSION['nama_user'] = $qry['nama_user'];
                     echo "<script>window.location='".base_url()."';</script>";
                 } else { ?>
                     <div class="row">
@@ -68,4 +71,3 @@ if(isset($_SESSION['user'])) {
     <script src="<?=base_url('_assets/js/bootstrap.min.js')?>"></script>
 </body>
 </html>
-<?php } ?>
