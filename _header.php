@@ -17,6 +17,7 @@ if(!isset($_SESSION['user'])) {
     <link href="<?=base_url('_assets/css/bootstrap.min.css')?>" rel="stylesheet">
     <!-- Custom CSS -->
     <link href="<?=base_url('_assets/css/simple-sidebar.css')?>" rel="stylesheet">
+    <link rel="icon" href="<?=base_url('_assets/css/bee.png')?>">
 </head>
 <body>
     <script src="<?=base_url('_assets/js/jquery.js')?>"></script>
