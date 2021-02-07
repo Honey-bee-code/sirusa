@@ -17,7 +17,7 @@
                         <th width="20px">No.</th>
                         <th>Nama Poli</th>
                         <th>Gedung</th>
-                        <th class="text-center" width="150px">
+                        <th class="text-center" width="75px">
                             <input type="checkbox" class="pilih_semua" value="">
                         </th>
                     </tr>
