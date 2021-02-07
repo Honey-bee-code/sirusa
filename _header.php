@@ -60,3 +60,4 @@ if(!isset($_SESSION['user'])) {
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
+            <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a>
