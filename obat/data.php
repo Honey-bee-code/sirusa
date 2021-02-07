@@ -33,7 +33,7 @@
             </thead>
             <tbody>
                 <?php 
-                $batas = 3;
+                $batas = 5;
                 $halaman = @$_GET['hal'];
                 if(empty($halaman)) {
                     $posisi = 0;

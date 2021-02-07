@@ -11,6 +11,8 @@ if(isset($_POST['tambah'])) {
     echo "<script>window.location='data.php';</script>";
 } else if(isset($_POST['tambah'])) {
 
+} else {
+    echo "<script>window.location='data.php';</script>";
 }
 
 ?>
