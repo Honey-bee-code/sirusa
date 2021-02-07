@@ -39,7 +39,7 @@ if(!isset($_SESSION['user'])) {
                     <a href="#">Data Pasien</a>
                 </li>
                 <li>
-                    <a href="#">Data Dokter</a>
+                    <a href="<?=base_url('dokter')?>">Data Dokter</a>
                 </li>
                 <li>
                     <a href="<?=base_url('poli')?>">Data Poliklinik</a>
