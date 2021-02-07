@@ -19,7 +19,13 @@ if(isset($_POST['tambah'])) {
     }
     
 } else if(isset($_POST['edit'])) {
-    
+    for ($i=0; $i < count($_POST['id']); $i++) {
+        $id = $_POST['id'][$i];
+        $nama = $_POST['nama'][$i];
+        $gedung = $_POST['gedung'][$i];
+        $sql = mysqli_query($koneksi, "UPDATE poliklinik SET nama_poli = '$nama', gedung = '$gedung' WHERE id_poli = '$id'") or die (mysqli_error($koneksi));
+    }
+    echo "<script>alert('".$total." data berhasil ditambahkan');window.location='data.php';</script>";
 } else {
     echo "<script>window.location='data.php';</script>";
 }

@@ -25,7 +25,7 @@
                 <tbody>
                 <?php 
                     $no = 1;
-                    $sql_poli = mysqli_query($koneksi, "SELECT * FROM poliklinik") or die (mysqli_error($koneksi));
+                    $sql_poli = mysqli_query($koneksi, "SELECT * FROM poliklinik ORDER BY nama_poli ASC") or die (mysqli_error($koneksi));
                     if(mysqli_num_rows($sql_poli) > 0){ 
                         while($data = mysqli_fetch_array($sql_poli)) { ?>
                         <tr>
