@@ -75,6 +75,15 @@
 
     function edit() {
         document.proses.action = 'edit.php'
+        document.proses.submit()
+    }
+
+    function hapus() {
+        var konf = confirm('Yakin akan menghapus data?')
+        if(konf){
+            document.proses.action = 'hapus.php'
+            document.proses.submit()
+        }
     }
 </script>
 
