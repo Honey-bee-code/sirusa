@@ -33,7 +33,7 @@
             </thead>
             <tbody>
                 <?php 
-                $batas = 5;
+                $batas = 3;
                 $halaman = @$_GET['hal'];
                 if(empty($halaman)) {
                     $posisi = 0;
@@ -95,7 +95,7 @@
             ?>
         </div>
         <div style="float:right;">
-            <ul class="pagination pagination-sm" style="margin:-">
+            <ul class="pagination pagination-sm" style="margin:0">
                 <?php
                 $jml_hal = ceil($jml / $batas);
                 for($i=1; $i <= $jml_hal; $i++) {
