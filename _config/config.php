@@ -9,8 +9,8 @@ if(mysqli_connect_errno()) {
 
 
 function base_url($url = null) {
-    $base_url = "http://localhost/sirusa";
-    // $base_url = "http://192.168.43.54/sirusa";
+    // $base_url = "http://localhost/sirusa";
+    $base_url = "http://192.168.43.54/sirusa";
     if($url != null) {
         return $base_url."/".$url;
     } else {

@@ -81,6 +81,36 @@
             </tbody>
         </table>
     </div>
+    <?php
+    if($_POST['cari'] != '') {
+        echo "<div style=\"float:left;\">";
+        $jml = mysqli_num_rows(mysqli_query($koneksi, $queryJml));
+        echo "Data Hasil Pencarian : <b>$jml</b>";
+        echo "</div>";
+    } else { ?>
+        <div style="float:left;">
+            <?php
+            $jml = mysqli_num_rows(mysqli_query($koneksi, $queryJml));
+            echo "Jumlah Data : <b>$jml</b>";
+            ?>
+        </div>
+        <div style="float:right;">
+            <ul class="pagination pagination-sm" style="margin:-">
+                <?php
+                $jml_hal = ceil($jml / $batas);
+                for($i=1; $i <= $jml_hal; $i++) {
+                    if($i != $halaman) {
+                        echo "<li><a href=\"?hal=$i\">$i</a></li>";
+                    } else {
+                        echo "<li class=\"active\"><a>$i</a></li>";
+                    }
+                }
+                ?>
+            </ul>
+        </div>
+    <?php
+    }
+    ?>
 </div>
 
 <?php include_once('../_footer.php');?>
