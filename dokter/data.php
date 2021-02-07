@@ -22,7 +22,7 @@
                         <th>Spesialis</th>
                         <th>Alamat</th>
                         <th>No. Telepon</th>
-                        <th><i class="glyphicon glyphicon-cog"></i></th>
+                        <th class="text-center"><i class="glyphicon glyphicon-cog"></i></th>
                     </tr>
                 </thead>
                 <tbody>
