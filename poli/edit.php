@@ -1,11 +1,12 @@
 <?php 
+include_once('../_header.php');
 
 $chek = $_POST['pilih'];
 if(!isset($chek)) {
     echo "<script>alert('Tidak ada data yang dipilih!'); window.location='data.php'</script>";
 } else {
 
-include_once('../_header.php');?>
+?>
 
 <div class="box">
     <h1>Poliklinik</h1>
