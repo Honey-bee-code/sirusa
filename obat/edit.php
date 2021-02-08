@@ -24,7 +24,7 @@ include_once('../_header.php');
                     <input type="text" name="nama" value="<?=$data['nama_obat']?>" class="form-control" required autofocus>
                 </div>
                 <div class="form-group">
-                    <label for="nama">Keterangan</label>
+                    <label for="ket">Keterangan</label>
                     <textarea name="ket" id="ket" class="form-control" required><?=$data['ket_obat']?></textarea>
                 </div>
                 <div class="form-group pull-right">

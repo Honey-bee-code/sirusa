@@ -40,7 +40,7 @@
                         <td><?=$data['alamat']?></td>
                         <td><?=$data['no_hp']?></td>
                         <td align="center">
-                            <a href="edit.php" class="btn btn-warning btn-xs"><i class="glyphicon glyphicon-edit"></i> Edit</a>
+                            <a href="edit.php?id=<?=$data['id_dokter']?>" class="btn btn-warning btn-xs"><i class="glyphicon glyphicon-edit"></i> Edit</a>
                         </td>
                     </tr>
                     <?php } ?>
