@@ -13,8 +13,9 @@
                 <thead>
                     <tr>
                         <th width="20px">No.</th>
-                        <th>Nama Dokter</th>
-                        <th>Spesialis</th>
+                        <th>Nomor Identitas</th>
+                        <th>Nama Pasien</th>
+                        <th>Jenis Kelamin</th>
                         <th>Alamat</th>
                         <th>No. Telepon</th>
                         <th class="text-center"><i class="glyphicon glyphicon-cog"></i></th>
