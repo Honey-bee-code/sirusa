@@ -1,5 +1,5 @@
 <?php include_once('../_header.php');?>
-
+<link rel="stylesheet" href="_assets/css/responsive.dataTables.min.css">
 <div class="box">
     <h1>Dokter</h1>
     <h4>
@@ -82,5 +82,5 @@
         }
     }
 </script>
-
+<script src="_assets/js/dataTables.responsive.min.js"></script>
 <?php include_once('../_footer.php');?>
