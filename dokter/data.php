@@ -10,7 +10,7 @@
     </h4>
     <form action="" method="post" name="proses">
         <div class="table-responsive">
-            <table class="table table-striped table-bordered table-hover">
+            <table class="table table-striped table-bordered table-hover" id="tabelDokter">
                 <thead>
                     <tr>
                         <th class="text-center" width="75px">
@@ -53,6 +53,16 @@
 </div>
 <script>
     $(document).ready(function() {
+        $('#tabelDokter').DataTable({
+            columnDefs: [
+                {
+                    "searchable": false,
+                    "orderable": false,
+                    "targets": [0, 6]
+                }
+            ],
+            order: [1, "asc"]
+        })
         $('.pilih_semua').on('click', function() {
             if(this.checked) {
                 $('.pilih').each(function() {

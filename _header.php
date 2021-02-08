@@ -15,15 +15,15 @@ if(!isset($_SESSION['user'])) {
     <meta name="description" content="">
     <meta name="author" content="">
     <title>Aplikasi - SiRuSa</title>
-    <!-- Bootstrap Core CSS -->
     <link href="<?=base_url('_assets/css/bootstrap.min.css')?>" rel="stylesheet">
-    <!-- Custom CSS -->
     <link href="<?=base_url('_assets/css/simple-sidebar.css')?>" rel="stylesheet">
+    <link href="<?=base_url('_assets/libs/DataTables/datatables.min.css')?>" rel="stylesheet">
     <link rel="icon" href="<?=base_url('_assets/css/bee.png')?>">
 </head>
 <body>
     <script src="<?=base_url('_assets/js/jquery.js')?>"></script>
     <script src="<?=base_url('_assets/js/bootstrap.min.js')?>"></script>
+    <script src="<?=base_url('_assets/libs/DataTables/datatables.min.js')?>"></script>
     <div id="wrapper">
 
         <!-- Sidebar -->
