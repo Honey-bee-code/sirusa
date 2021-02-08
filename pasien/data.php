@@ -9,10 +9,10 @@
         </div>
     </h4>
         <div class="table-responsive">
-            <table class="table table-striped table-bordered table-hover">
+            <table class="table table-striped table-bordered table-hover" id="tabel-pasien">
                 <thead>
                     <tr>
-                        <th width="20px">No.</th>
+                        <!-- <th width="20px">No.</th> -->
                         <th>Nomor Identitas</th>
                         <th>Nama Pasien</th>
                         <th>Jenis Kelamin</th>
@@ -24,7 +24,28 @@
                 
             </table>
         </div>
-    
+    <script>
+        $(document).ready(function() {
+
+            $('#tabel-pasien').DataTable( {
+                "lengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
+                "processing": true,
+                "serverSide": true,
+                "ajax": "data_json.php",
+                columnDefs : [
+                    {
+                        "searchable" : false,
+                        "orderable" : false,
+                        "targets" : 5,
+                        "render" : function(data, type, row){
+                            var btn = "<center><a href=\"edit.php?id="+data+"\" class=\"btn btn-warning btn-xs\"><i class=\"glyphicon glyphicon-edit\"></i> Edit</a> <a href=\"hapus.php?id="+data+"\" onclick=\"return confirm('Yakin akan menghapus data ini?')\" class=\"btn btn-danger btn-xs\"><i class=\"glyphicon glyphicon-trash\"></i> Hapus</a></center>"
+                            return btn
+                        }
+                    }
+                ]
+            } );
+        } );
+    </script>
 </div>
 
 <?php include_once('../_footer.php');?>
