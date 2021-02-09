@@ -35,6 +35,15 @@ if(isset($_POST['tambah'])) {
                     alamat = '$alamat', no_hp = '$telp' WHERE id_pasien = '$id'") or die (mysqli_error($koneksi));
         echo "<script>window.location='data.php';</script>";
     }
+} else if(isset($_POST['import'])){
+    $file = $_FILES['file']['name'];
+    $ektensi = explode(".", $file);
+    $file_name = "file-".round(microtime(true)).".".end($ektensi);
+    $sumber = $_FILES['file']['tmp_name'];
+    $target_dir = "../_file/";
+    $target_file = $target_dir.$file_name;
+    move_uploaded_file($sumber, $target_file);
+    
 } else {
     echo "<script>window.location='data.php';</script>";
 }
