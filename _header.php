@@ -50,7 +50,7 @@ if(!isset($_SESSION['user'])) {
                     <a href="<?=base_url('obat')?>">Data Obat - Pencarian Manual</a>
                 </li>
                 <li>
-                    <a href="#">Rekam Medis</a>
+                    <a href="<?=base_url('rekam_medis')?>">Rekam Medis</a>
                 </li>
                 <li>
                     <a href="<?=base_url('auth/logout.php')?>"><span class="text-danger">Logout</span></a>
