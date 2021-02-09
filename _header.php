@@ -38,16 +38,16 @@ if(!isset($_SESSION['user'])) {
                     <a href="<?=base_url('dashboard')?>">Dashboard</a>
                 </li>
                 <li>
-                    <a href="<?=base_url('pasien')?>">Data Pasien</a>
+                    <a href="<?=base_url('pasien')?>">Data Pasien - ServerSide</a>
                 </li>
                 <li>
-                    <a href="<?=base_url('dokter')?>">Data Dokter</a>
+                    <a href="<?=base_url('dokter')?>">Data Dokter - ClientSide</a>
                 </li>
                 <li>
-                    <a href="<?=base_url('poli')?>">Data Poliklinik</a>
+                    <a href="<?=base_url('poli')?>">Data Poliklinik - CRUD biasa</a>
                 </li>
                 <li>
-                    <a href="<?=base_url('obat')?>">Data Obat</a>
+                    <a href="<?=base_url('obat')?>">Data Obat - Pencarian Manual</a>
                 </li>
                 <li>
                     <a href="#">Rekam Medis</a>
@@ -62,4 +62,4 @@ if(!isset($_SESSION['user'])) {
         <!-- Page Content -->
         <div id="page-content-wrapper">
             <div class="container-fluid">
-            <a href="#menu-toggle" class="btn btn-default" id="menu-toggle">Menu</a>
+            <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><i class="glyphicon glyphicon-menu-hamburger"></i> Menu</a>
