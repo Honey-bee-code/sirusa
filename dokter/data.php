@@ -54,6 +54,7 @@
 <script>
     $(document).ready(function() {
         $('#tabelDokter').DataTable({
+            "lengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
             columnDefs: [
                 {
                     "searchable": false,
@@ -61,7 +62,32 @@
                     "targets": [0, 6]
                 }
             ],
-            order: [1, "asc"]
+            order: [1, "asc"],
+            language : 
+                    {
+                        "decimal":        "",
+                        "emptyTable":     "No data available in table",
+                        "info":           "Menampilkan _START_ sampai _END_ dari _TOTAL_ jumlah data",
+                        "infoEmpty":      "Menampilkan 0 sampai 0 dari 0 data",
+                        "infoFiltered":   "(filtered from _MAX_ total entries)",
+                        "infoPostFix":    "",
+                        "thousands":      ",",
+                        "lengthMenu":     "Tampilkan _MENU_ data",
+                        "loadingRecords": "Memuat...",
+                        "processing":     "Sedang memproses...",
+                        "search":         "Search:",
+                        "zeroRecords":    "No matching records found",
+                        "paginate": {
+                            "first":      "Awal",
+                            "last":       "Akhir",
+                            "next":       "Sesudahnya",
+                            "previous":   "Sebelumnya"
+                        },
+                        "aria": {
+                            "sortAscending":  ": activate to sort column ascending",
+                            "sortDescending": ": activate to sort column descending"
+                        }
+                    }
         })
         $('.pilih_semua').on('click', function() {
             if(this.checked) {

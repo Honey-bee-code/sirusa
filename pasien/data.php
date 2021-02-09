@@ -30,7 +30,6 @@
         $(document).ready(function() {
 
             $('#tabel-pasien').DataTable( {
-                // "lengthMenu": [[5, 10, 25, 50, -1], [5, 10, 25, 50, "All"]],
                 "processing": true,
                 "serverSide": true,
                 "ajax": "data_json.php",
@@ -59,6 +58,7 @@
                     {
                         text: 'Tampil kolom',
                         extend: 'colvis',
+                        // collectionLayout: 'fixed two-column'
                     },
                     {
                         text: 'Tampil semua kolom',

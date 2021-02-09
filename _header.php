@@ -18,6 +18,8 @@ if(!isset($_SESSION['user'])) {
     <link href="<?=base_url('_assets/css/bootstrap.min.css')?>" rel="stylesheet">
     <link href="<?=base_url('_assets/css/simple-sidebar.css')?>" rel="stylesheet">
     <link href="<?=base_url('_assets/libs/DataTables/datatables.min.css')?>" rel="stylesheet">
+    <!-- <link href="<?=base_url('_assets/libs/DataTables/DataTables-1.10.23/css/jquery.dataTables.min.css')?>" rel="stylesheet"> -->
+    <!-- <link href="<?=base_url('_assets/libs/DataTables/Buttons-1.6.5/css/buttons.dataTables.min.css')?>" rel="stylesheet"> -->
     <link rel="icon" href="<?=base_url('_assets/css/bee.png')?>">
 </head>
 <body>
