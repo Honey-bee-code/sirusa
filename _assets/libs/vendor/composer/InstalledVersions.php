@@ -29,7 +29,7 @@ private static $installed = array (
     'aliases' => 
     array (
     ),
-    'reference' => '750a68d6640338759d489be293adc29c52a5d520',
+    'reference' => '62935381c9d0aaf96deaf4994706f67fffcc8f96',
     'name' => '__root__',
   ),
   'versions' => 
@@ -41,7 +41,7 @@ private static $installed = array (
       'aliases' => 
       array (
       ),
-      'reference' => '750a68d6640338759d489be293adc29c52a5d520',
+      'reference' => '62935381c9d0aaf96deaf4994706f67fffcc8f96',
     ),
     'brick/math' => 
     array (
@@ -51,15 +51,6 @@ private static $installed = array (
       array (
       ),
       'reference' => 'dff976c2f3487d42c1db75a3b180e2b9f0e72ce0',
-    ),
-    'phpoffice/phpexcel' => 
-    array (
-      'pretty_version' => '1.8.2',
-      'version' => '1.8.2.0',
-      'aliases' => 
-      array (
-      ),
-      'reference' => '1441011fb7ecdd8cc689878f54f8b58a6805f870',
     ),
     'ramsey/collection' => 
     array (

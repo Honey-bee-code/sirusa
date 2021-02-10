@@ -49,7 +49,9 @@ if(isset($_POST['tambah'])) {
     
     $obj = PHPExcel_IOFactory::load($target_file);
     $all_data = $obj->getActiveSheet()->toArray(null, true, true, true);
-    echo  $all_data[3]['A'];
+    
+
+    unlink($target_file);
 } 
 // else {
 //     echo "<script>window.location='data.php';</script>";
