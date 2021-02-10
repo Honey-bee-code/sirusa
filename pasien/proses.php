@@ -47,8 +47,8 @@ if(isset($_POST['tambah'])) {
     $target_file = $target_dir.$file_name;
     move_uploaded_file($sumber, $target_file);
     
-    $obj = PHPExcel_IOFactory::load($target_file);
-    $all_data = $obj->getActiveSheet()->toArray(null, true, true, true);
+    // $obj = PHPExcel_IOFactory::load($target_file);
+    // $all_data = $obj->getActiveSheet()->toArray(null, true, true, true);
     
 
     unlink($target_file);
