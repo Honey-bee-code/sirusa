@@ -40,16 +40,17 @@ if(isset($_POST['tambah'])) {
     }
 } else if(isset($_POST['import'])){
     $file = $_FILES['file']['name'];
-    $ektensi = explode(".", $file);
-    $file_name = "file-".round(microtime(true)).".".end($ektensi);
+    $ekstensi = explode(".", $file);
+    $file_name = "file-".round(microtime(true)).".".end($ekstensi);
     $sumber = $_FILES['file']['tmp_name'];
     $target_dir = "../_file/";
     $target_file = $target_dir.$file_name;
     move_uploaded_file($sumber, $target_file);
     
-    // $obj = PHPExcel_IOFactory::load($target_file);
-    // $all_data = $obj->getActiveSheet()->toArray(null, true, true, true);
+    $obj = PHPExcel_IOFactory::load($target_file);
+    $all_data = $obj->getActiveSheet()->toArray(null, true, true, true);
     
+    echo $all_data;
 
     unlink($target_file);
 } 
