@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '214e03501a06ef561ef0cc357efced1725544f20',
+    'reference' => '6aa93a7f2af37d3923f801441d42daab57e18b9c',
     'name' => '__root__',
   ),
   'versions' => 
@@ -18,7 +18,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '214e03501a06ef561ef0cc357efced1725544f20',
+      'reference' => '6aa93a7f2af37d3923f801441d42daab57e18b9c',
     ),
     'brick/math' => 
     array (
@@ -28,6 +28,15 @@
       array (
       ),
       'reference' => 'dff976c2f3487d42c1db75a3b180e2b9f0e72ce0',
+    ),
+    'phpoffice/phpexcel' => 
+    array (
+      'pretty_version' => '1.8.2',
+      'version' => '1.8.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '1441011fb7ecdd8cc689878f54f8b58a6805f870',
     ),
     'ramsey/collection' => 
     array (
