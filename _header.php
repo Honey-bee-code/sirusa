@@ -38,16 +38,16 @@ if(!isset($_SESSION['user'])) {
                     <a href="<?=base_url('dashboard')?>">Dashboard</a>
                 </li>
                 <li>
-                    <a href="<?=base_url('pasien')?>">Data Pasien - ServerSide</a>
+                    <a href="<?=base_url('pasien')?>">Data Pasien</a>
                 </li>
                 <li>
-                    <a href="<?=base_url('dokter')?>">Data Dokter - ClientSide</a>
+                    <a href="<?=base_url('dokter')?>">Data Dokter</a>
                 </li>
                 <li>
-                    <a href="<?=base_url('poli')?>">Data Poliklinik - CRUD biasa</a>
+                    <a href="<?=base_url('poli')?>">Data Poliklinik</a>
                 </li>
                 <li>
-                    <a href="<?=base_url('obat')?>">Data Obat - Pencarian Manual</a>
+                    <a href="<?=base_url('obat')?>">Data Obat</a>
                 </li>
                 <li>
                     <a href="<?=base_url('rekam_medis')?>">Rekam Medis</a>
