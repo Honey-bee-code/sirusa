@@ -38,7 +38,8 @@ if(isset($_POST['tambah'])) {
                     alamat = '$alamat', no_hp = '$telp' WHERE id_pasien = '$id'") or die (mysqli_error($koneksi));
         echo "<script>window.location='data.php';</script>";
     }
-} else if(isset($_POST['import'])){
+} 
+else if(isset($_POST['import'])){
     $file = $_FILES['file']['name'];
     $ekstensi = explode(".", $file);
     $file_name = "file-".round(microtime(true)).".".end($ekstensi);
