@@ -18,4 +18,11 @@ function base_url($url = null) {
     }
 }
 
+function indo_date($tgl) {
+    $tanggal = substr($tgl, 8, 2);
+    $bulan = substr($tgl, 5, 2);
+    $tahun = substr($tgl, 0, 4);
+    return $tanggal."/".$bulan."/".$tahun;
+}
+
 ?>
