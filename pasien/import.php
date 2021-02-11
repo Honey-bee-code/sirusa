@@ -17,7 +17,7 @@ include_once('../_header.php');
             <form action="proses.php" method="post" enctype="multipart/form-data">
                 <div class="form-group">
                     <label for="file">File Excel</label>
-                    <input type="file" name="file" class="form-control" required>
+                    <input type="file" name="file" id="file" class="form-control" required>
                 </div>    
                 <div class="form-group pull-right">
                     <input type="submit" name="import" value="Import" class="btn btn-success">
