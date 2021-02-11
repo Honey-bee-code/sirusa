@@ -49,8 +49,8 @@ if(isset($_POST['tambah'])) {
     $upload = move_uploaded_file($sumber, $target_file);
     
     
-    $obj = PHPExcel_IOFactory::load($target_file);
-    $all_data = $obj->getActiveSheet()->toArray(null, true, true, true);
+    // $obj = PHPExcel_IOFactory::load($target_file);
+    // $all_data = $obj->getActiveSheet()->toArray(null, true, true, true);
     
     // $sql = "INSERT INTO pasien (id_pasien, nomor_identitas, nama_pasien, jenis_kelamin, alamat, no_hp) VALUES";
     // for ($i=3; $i <= count($all_data); $i++) {
