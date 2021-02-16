@@ -57,7 +57,7 @@ if(!isset($_SESSION['user'])) {
                 </li>
             </ul>
         </div>
-        <!-- /#sidebar-wrapper -->
+        <!-- /#sidebar-wrapper --> 
 
         <!-- Page Content -->
         <div id="page-content-wrapper">
